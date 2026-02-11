@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Josephine's Music Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <h1>Contact</h1>
+    <form
+        class="contact-form"
+        action="https://formspree.io/f/mkovnajn"
+        method="POST">
+        <label>
+            Email address *
+            <input type="email" name="email" required placeholder="your@email.com">
+        </label>
+
+        <label>
+            Phone number (optional)
+            <input type="tel" name="phone" placeholder="+61 xxx xxx xxx">
+        </label>
+
+        <label>
+            Message *
+            <p>Please provide the following information:</p>
+            <ul class="contact-msg-info">
+                <li>Percussion or piano</li>
+                <li>You and your child's preferred availabilities</li>
+                <li>Skill level / How long they have been playing the instrument for</li>
+            </ul>
+            <textarea name="message" rows="20" required placeholder="Provide me with the above information"></textarea>
+        </label>
+
+        <input type="hidden" name="_subject" value="New Music Lesson Enquiry">
+
+        <button type="submit">Send enquiry</button>
+    </form>
+</body>
+</html>
